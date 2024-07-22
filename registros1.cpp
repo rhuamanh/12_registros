@@ -8,11 +8,13 @@ struct empleados{
 }datos[100];
 
 int main (){
+	system ("cls");
 	int n, mayor=0, menor=1000000, contador1=0, contador2=0;
 	cout<<"ingrese el numero de empleados:";
 	cin>>n;
 	for (int i=0; i<n; i++){
-		cout<<"\n--Datos Del empleado"<<i+1<<"--"<<endl;
+		system ("cls");
+		cout<<"--Datos Del empleado "<<i+1<<"--"<<endl;
 		cout<<"\nIngrese el nombre del empleado:";
 		cin>>datos[i].nombres;
 		cout<<"Ingrese el sexo del empleado:";
@@ -36,5 +38,6 @@ int main (){
 	cout<<"\n"<<"Nombre:"<<datos[contador2].nombres<<endl;
 	cout<<"Sexo:"<<datos[contador2].sexo<<endl;
 	cout<<"Sueldo:"<<datos[contador2].sueldo<<endl;
+	system ("pause");
 	return 0;
 }
